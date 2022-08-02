@@ -162,8 +162,8 @@
     }
 
     &__form-search {
-        background-color: rgb(213 127 221 / 69%);
-        width: 70%;
+        background-color: rgba(244, 200, 248, 0.911);
+        width: 80%;
         height: 30px;
         border-radius: 5px;
         border: 2px solid black;
@@ -173,7 +173,7 @@
 
     &__form-submit {
         background: no-repeat center/80% url(/icons/magnifying-glass-solid.svg);
-        background-color: rgb(213 127 221 / 69%);
+        background-color: rgba(244, 200, 248, 0.911);
         color: transparent;
         border-radius: 50%;
         height: 30px;
