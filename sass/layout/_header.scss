@@ -5,6 +5,9 @@
 .main-header {
     display: flex;
     flex-direction: column;
+    font-family: 'Orbitron', sans-serif;
+    
+
 
     @media (max-width: 768px) {
         & {
@@ -39,7 +42,7 @@
         @media (max-width: 768px) {
             & {
                 background: rgba(65, 221, 28, 0.4);
-                border-radius: 16px;
+                /* border-radius: 16px; */
                 box-shadow: 0 8px 35px rgba(0, 0, 0, 0.1);
                 border: 2px solid rgba(65, 221, 28, 0.48);
             }
@@ -51,6 +54,7 @@
         display: flex;
         list-style-type: none;
         justify-content:flex-start;
+
 
         @media (max-width: 768px) {
             & {

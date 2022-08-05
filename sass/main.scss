@@ -8,5 +8,12 @@
 @import "components/card";
 
 .section-cards {
-   background-color: rgb(150 149 183 / 42%)
+   background-color: rgb(150 149 183 / 42%);
+   font-family: 'Changa', sans-serif;
+   
+
+   &__header {
+      text-align: center;
+      font-size: 25px;
+   }
 }
