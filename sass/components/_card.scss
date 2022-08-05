@@ -122,5 +122,9 @@ a {
     text-decoration: none;
 }
 
-
-
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7.5em;
+    justify-content: center;
+}

@@ -53,7 +53,7 @@
     &__nav-list {
         display: flex;
         list-style-type: none;
-        justify-content:flex-start;
+        justify-content:center;
 
 
         @media (max-width: 768px) {
@@ -67,7 +67,7 @@
     &__nav-item {
         text-align: center;
         border: 2px black solid;
-        margin: 2px;
+        margin: 10px;
         width: fit-content;
         align-self: center;
 
