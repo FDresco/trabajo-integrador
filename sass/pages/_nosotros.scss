@@ -1,0 +1,16 @@
+.main-nosotros {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: no-repeat top url(/img/nosotros/nosotros-mediana.jpg);
+
+&__header, &__article, &__aside {
+    height: 200px;
+}
+
+&__header {
+    font-family: "Changa", sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+}
