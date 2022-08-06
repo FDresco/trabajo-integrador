@@ -3,22 +3,23 @@
     display: flex;
     flex-direction: column;
     font-family: "Changa", sans-serif;
-    background: no-repeat top url(/img/nosotros/nosotros-mediana.jpg);
+    background: no-repeat top url(/img/nosotros/nosotros-mediana-nueva.jpg);
 
 &__header, &__article, &__aside, &__nav {   
     text-align: center;
     width: 600px;
     align-self: center;
+    font-size: 19px;
         @media (max-width: 768px) {
             width:300px;
             margin-bottom: 10px;
+            font-size: 16px;
         }
 
 }
 
 &__header {
     height: 80px;
-    font-size: 20px;
 }
 
 &__article {
