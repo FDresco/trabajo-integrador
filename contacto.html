@@ -52,25 +52,30 @@
     <main class="main-contacto">
       <section class="section-contacto">
         <header class="section-contacto__header">
-          <h1>Contactanos</h1>
+          <h1>¡Contactanos!</h1>
         </header>
 
         <form action="" class="section-contacto__form">
-            <label for="nombre" name="nombre" id="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" required>
+            <label class="section-contacto__label" for="nombre" name="nombre" id="nombre">Nombre</label>
+            <input class="section-contacto__input" type="text" name="nombre" id="nombre" required>
 
-            <label for="mail" name="mail" id="mail">Email</label>
-            <input type="email" name="mail" id="mail" placeholder="ej:nombre@gmail.com" required>
+            <label class="section-contacto__label" for="mail" name="mail" id="mail">Email</label>
+            <input class="section-contacto__input" type="email" name="mail" id="mail" placeholder="ej:nombre@gmail.com" required>
 
-            <label for="telefono" name="telefono" id="telefono">Teléfono</label>
-            <input type="text" name="telefono" id="telefono" required>
+            <label class="section-contacto__label" for="telefono" name="telefono" id="telefono">Teléfono</label>
+            <input class="section-contacto__input" type="text" name="telefono" id="telefono" required>
 
-            <label for="mensaje" name="mensaje" id="mensaje">Mensaje</label>
-            <textarea name="mensaje" id="mensaje" cols="20" rows="5" placeholder="dejanos tu mensaje aquí" required></textarea>
+            <label class="section-contacto__label" for="mensaje" name="mensaje" id="mensaje">Mensaje</label>
+            <textarea class="section-contacto__input" name="mensaje" id="mensaje" cols="20" rows="5" placeholder="dejanos tu mensaje aquí" required></textarea>
+
+            <button class="section-contacto__btn">Enviar</button>
         </form>
 
-        
-        <nav class="section-contacto__nav">
+       </section>
+
+        <aside class="aside">
+
+        <nav class="aside__nav">
             <a href="#">Instagram</a>
             <a href="#">Facebook</a>
             <a href="#">Twitter</a>
@@ -78,13 +83,16 @@
         
 
        
-        <ul class="section-contacto__lista">
+        <ul class="aside__lista">
             <li>Celular: +549 1163210600</li>
             <li>Mail contactanos@gmail.com</li>
             <li>Encontranos en: Corrientes 123</li>
         </ul>
         
-    </section>
+        </aside>
+
+    
+
     </main>
     
 </body>
