@@ -50,6 +50,10 @@
     
 }
 
+&__label {
+    font-weight: 600;
+}
+
 &__input {
     width: 90%;
     /* height: 25px; */
@@ -94,6 +98,7 @@
 }
 }
 
+
 #instagram {
     color: transparent;
     background: no-repeat center/40% url(/icons/instagram-brands.svg);
@@ -111,4 +116,8 @@
 #twitter {
     color: transparent;
     background: no-repeat center/60% url(/icons/square-twitter-brands.svg);
+}
+
+ul {
+    list-style-type: none;
 }
