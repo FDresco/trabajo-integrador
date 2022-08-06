@@ -2,9 +2,11 @@
     /* width: 100vw; */
     height: 100vh;
     display: flex;
+    font-family: "Changa", sans-serif;
     background: no-repeat top url(/img/contacto/damian-zaleski-RYyr-k3Ysqg-unsplash.jpg);
 
         @media (max-width: 768px) {
+            /* width: 100%; */
             background: no-repeat right bottom url(/img/contacto/damian-zaleski-RYyr-k3Ysqg-unsplash.jpg);
             flex-direction: column;
             
@@ -22,11 +24,13 @@
         @media (max-width: 768px) {
             align-items: flex-start;
             margin-left: 10px;
+            width: auto;
             
         }
 
 &__header {
     margin-top: 10px;
+    font-size: 25px;
 
 }
 
@@ -48,11 +52,28 @@
 
 &__input {
     width: 90%;
+    /* height: 25px; */
     margin-bottom: 10px;
+    border-radius: 4px;
+    border: 2px solid var(--color-bordes);
+    box-shadow: 0 4px 10px var(--color-bordes), 0 4px 8px var(--color-toggle);
 }
 
 &__btn {
     width: 50px;
+    height: 30px;
+    border-radius: 4px;
+    border: 2px solid var(--color-bordes);
+    box-shadow: 0 4px 10px var(--color-bordes), 0 4px 8px var(--color-toggle);
+    background-color: var(--color-toggle);
+    color: var(--color-search);
+    margin-top: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--color-header);
+        color: black;
+    }
 }
    
 }
@@ -65,7 +86,29 @@
 
         @media (max-width: 768px) {
             margin-left: 10px;
-            width: 40vw;
+            width: 80vw;
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
+
+}
+}
+
+#instagram {
+    color: transparent;
+    background: no-repeat center/40% url(/icons/instagram-brands.svg);
+}
+
+#facebook {
+    margin-right: 5px;
+    color: transparent;
+    background: no-repeat center/40% url(/icons/square-facebook-brands.svg);
+        @media (max-width: 768px) {
+            margin: 0;
         }
 }
+
+#twitter {
+    color: transparent;
+    background: no-repeat center/60% url(/icons/square-twitter-brands.svg);
 }
