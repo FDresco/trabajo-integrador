@@ -7,6 +7,8 @@
 
 @import "components/card";
 
+@import "pages/contacto";
+
 :root {
    --color-header: rgb(89 171 70 / 38%);
    --color-bordes: rgba(58, 153, 35, 0.475);
@@ -15,13 +17,4 @@
 }
 
 
-.section-cards {
-   background-color: rgb(150 149 183 / 42%);
-   font-family: 'Changa', sans-serif;
-   
 
-   &__header {
-      text-align: center;
-      font-size: 25px;
-   }
-}

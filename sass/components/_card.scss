@@ -1,3 +1,27 @@
+.section-cards {
+   background-color: rgb(150 149 183 / 42%);
+   font-family: 'Changa', sans-serif;
+   
+
+   &__header {
+      text-align: center;
+      font-size: 25px;
+   }
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7.5em;
+    justify-content: center;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+
 .card {
     outline: none;
     flex-grow: 1;
@@ -113,18 +137,6 @@
 }
 
 
-h2 {
 
-    text-align: center;
-}
 
-a {
-    text-decoration: none;
-}
 
-.cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 7.5em;
-    justify-content: center;
-}
