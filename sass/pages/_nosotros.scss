@@ -2,9 +2,10 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: "Changa", sans-serif;
     background: no-repeat top url(/img/nosotros/nosotros-mediana.jpg);
 
-&__header, &__article, &__aside {   
+&__header, &__article, &__aside, &__nav {   
     text-align: center;
     width: 600px;
     align-self: center;
@@ -17,16 +18,21 @@
 
 &__header {
     height: 80px;
-    font-family: "Changa", sans-serif;
     font-size: 20px;
 }
 
 &__article {
-    height: 130px;
+    height: 170px;
+    /* margin-top: 10px; */
 }
 
 &__aside {
+    height: fit-content;
     height: 160px;
 }
 
+/* &__nav {
+
+}
+ */
 }
