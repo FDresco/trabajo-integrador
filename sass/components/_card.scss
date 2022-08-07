@@ -15,6 +15,9 @@
     gap: 7.5em;
     justify-content: center;
     text-align: center;
+        @media (max-width: 768px) {
+            gap: 1em;
+        }
 }
 
 a {
@@ -27,7 +30,7 @@ a {
     flex-grow: 1;
     width: 220px;
     max-width: 300px;
-    height: 400px;
+    height: 400px;  
     overflow: hidden;
     box-shadow: 0 4px 10px var(--color-bordes), 0 4px 8px var(--color-toggle);
     border-radius: 5px;
@@ -46,11 +49,11 @@ a {
     }
 
     &:nth-child(2n) {
-        background: linear-gradient(90deg, rgba(217,76,232,0.9164040616246498) 39%, rgba(101,7,110,0.8239670868347339) 99%);
+        background: linear-gradient(90deg, rgba(188, 65, 202, 0.575) 39%, rgba(101, 7, 110, 0.589) 99%);
     }
 
     &:nth-child(2n + 1) {
-        background: linear-gradient(90deg, rgba(74,236,87,0.9164040616246498) 39%, rgba(58,153,35,0.8323704481792717) 100%);
+        background: linear-gradient(90deg, rgba(54, 167, 63, 0.596) 39%, rgba(59, 153, 35, 0.527) 100%);
     }
 
     &__image-container {
