@@ -25,7 +25,7 @@
     }
 
     &:checked ~ .search-bar .menu-toggle__label {
-        background-color: black;
+        background-color: var(--color-toggle);
     }
 }
 
@@ -225,7 +225,7 @@
 
     &__label {
         display: block;
-        background-color: var(--color-toggle);
+        background-color: black;
         height: 100%;
 
     }
@@ -234,7 +234,7 @@
     &__meat,
     &__bottom-bread {
         display: block;
-        background-color: #333;
+        background-color: rgb(87, 86, 86);
         height: .2em;
         position: absolute;
         left: .5em;
@@ -258,6 +258,7 @@
         & {
             display: block;
             cursor: pointer;
+            background-color: black;
         
         }
 
