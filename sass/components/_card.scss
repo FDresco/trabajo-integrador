@@ -8,8 +8,8 @@ a {
     outline: none;
     flex-grow: 1;
     width: 220px;
-    max-width: 300px;
-    height: 400px;  
+    max-width: 250px;
+    height: 200px;  
     overflow: hidden;
     box-shadow: 0 4px 10px var(--color-bordes), 0 4px 8px var(--color-toggle);
     border-radius: 5px;
@@ -25,6 +25,7 @@ a {
         -webkit-transform-origin: top;
         transform-origin: top;
         box-shadow: 0 7px 8px rgba(0,0,0, .05), 0 3 3px rgba(0,0,0, .01);
+        height: 400px;
     }
 
     &:nth-child(2n) {
