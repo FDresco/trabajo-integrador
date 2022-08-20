@@ -26,11 +26,15 @@ a {
         transform-origin: top;
         box-shadow: 0 7px 8px rgba(0,0,0, .05), 0 3 3px rgba(0,0,0, .01);
         height: 400px;
+            @media (min-width: 420px) and (max-width:770px) {
+                height: 200px;
+            }
     }
 
     &:nth-child(2n) {
         background: linear-gradient(90deg, rgba(188, 65, 202, 0.575) 39%, rgba(101, 7, 110, 0.589) 99%);
         color: rgba(6, 75, 11, 0.993);
+        
 
     }
 
@@ -47,6 +51,7 @@ a {
         clip-path: inset(0 0 0 0);
     }
 
+
     &:hover &__image-container,
     &:focus &__image-container {
         -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
@@ -55,10 +60,22 @@ a {
     }
 
     &__image {
-        width: 100%;
-        height: 100%;
         object-fit: cover;
         transition: .4s;
+        box-sizing:border-box;
+        overflow: hidden;
+        display:block;
+        width:300px;        
+        height:300px;       
+        padding-left:300px; 
+
+            
+            @media (max-width: 1024px) {
+                    width: 100px;
+                    height: 250px;
+                    padding-left: 250px;
+            }
+        
     }
 
     &:hover &__image,
@@ -70,6 +87,8 @@ a {
                 transform: scale(1.8) rotate(5deg);
                 transform-origin: center;
             }
+
+
         
     }
 
@@ -122,7 +141,210 @@ a {
  
     }  
 
+
+    &:nth-of-type(1) {
+        img {
+        background: no-repeat top url(/img/productos/auriculares-sony.jpg);
+        background-size: 80px 50px;
+        background-size: 100% 80%;
+        }
+
+    .card__heading {
+    visibility: hidden;
+    position: relative;
+    }
+
+    .card__heading:after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "Auriculares Sony";
+    }
+    }
+
+    &:nth-of-type(2) {
+    img {
+        background: no-repeat top right url(/img/productos/camara-canon.jpg);
+        background-size: 80px 50px;
+        background-size: 100% 80%;
+    }
+
+
+    .card__heading {
+    visibility: hidden;
+    position: relative;
+    }
+
+    .card__heading:after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "Cámara Canon";
+    }
+
+    }
+
+
+    &:nth-of-type(3) {
+    img { 
+        background: no-repeat top url(/img/productos/celular-samsung.jpg);
+        background-size: 80px 50px;
+        background-size: 100% 80%;
+}   
+    .card__heading {
+    visibility: hidden;
+    position: relative;
+    }
+
+    .card__heading:after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "Celular Samsung";
+    }
+    }
+
+    &:nth-of-type(4) {
+    img { 
+        background: no-repeat top url(/img/productos/chromecast-google.jpg);
+        background-size: 80px 50px;
+        background-size: 100% 80%;
 }
+    .card__heading {
+    visibility: hidden;
+    position: relative;
+    }
+
+    .card__heading:after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "Chromecaste";
+    }
+
+    }
+
+    &:nth-of-type(5) {
+    img { 
+        background: no-repeat top url(/img/productos/dji-mavic-2-pro.jpg);
+        background-size: 80px 50px;
+        background-size: 100% 80%;
+}   
+    .card__heading {
+    visibility: hidden;
+    position: relative;
+    }
+
+    .card__heading:after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "Drone Mavic";
+    }
+    }
+
+    &:nth-of-type(6) {
+    img { 
+        background: no-repeat top url(/img/productos/apple-iphone-12.jpg);
+        background-size: 80px 50px;
+        background-size: 100% 80%;
+}   
+    .card__heading {
+    visibility: hidden;
+    position: relative;
+    }
+
+    .card__heading:after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "Iphone 12";
+    }
+    }
+
+    &:nth-of-type(7) {
+    img { 
+        background: no-repeat top url(/img/productos/modem-motorola.jpg);
+        background-size: 80px 50px;
+        background-size: 100% 80%;
+}   
+    .card__heading {
+    visibility: hidden;
+    position: relative;
+    }
+
+    .card__heading:after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "Modem Motorola";
+    }
+    }
+
+    &:nth-of-type(8) {
+    img { 
+        background: no-repeat top url(/img/productos/motorola-moto-e7.jpg);
+        background-size: 80px 50px;
+        background-size: 100% 80%;
+}   
+    .card__heading {
+    visibility: hidden;
+    position: relative;
+    }
+
+    .card__heading:after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "Motorola MotoE7";
+    }
+    }
+
+    &:nth-of-type(9) {
+    img { 
+        background: no-repeat top url(/img/productos/drone-dji.jpg);
+        background-size: 80px 50px;
+        background-size: 100% 80%;
+}   
+    .card__heading {
+    visibility: hidden;
+    position: relative;
+    }
+
+    .card__heading:after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "Drone Dji";
+    }
+    }   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
