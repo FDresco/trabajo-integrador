@@ -59,7 +59,7 @@
         @media (max-width: 768px) {
             & {
                 flex-direction: column;
-                /* align-items: flex-start; */
+                align-items: flex-start;
             }
         }
     }
@@ -180,7 +180,7 @@
     }
 
     &__form-submit {
-        background: no-repeat center/80% url(/icons/magnifying-glass-solid.svg);
+        background: no-repeat center/80% url(/icons/lupa.svg);
         background-color: var(--color-search);
         color: transparent;
         border-radius: 50%;
@@ -194,8 +194,8 @@
     }
 
     &__carrito-container {
-        flex: 0 0 3em;
-        background: no-repeat center/100% url(/icons/carrito.png);
+        flex: 0 0 3.5em;
+        background: no-repeat center/100% url(/icons/carrito3.png);
         color: transparent;
         /* background-color: rgba(189, 204, 172, 0.836); */
         margin-left: 8px;

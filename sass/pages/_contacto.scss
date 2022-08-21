@@ -1,14 +1,30 @@
+.body-contacto {
+    background: no-repeat bottom url(/img/contacto/contacto-fondo.jpg);
+    background-position: 50% -50%;
+        @media (max-width: 768px) {
+            background: no-repeat url(/img/inicio/inicio-fondo-4.jpg)
+        }
+
+}
+
+.main-header-contacto {
+    font-family: 'Orbitron', sans-serif;
+    background: repeat url(/img/inicio/inicio-fondo-3.jpg);
+    
+
+}
+
 .main-contacto {
-    width: 100%;
+    /* width: 100vw; */
     height: 100vh;
     display: flex;
     font-family: "Changa", sans-serif;
-    background: no-repeat top url(/img/contacto/damian-zaleski-RYyr-k3Ysqg-unsplash.jpg);
+    /* background: no-repeat top url(/img/contacto/damian-zaleski-RYyr-k3Ysqg-unsplash.jpg); */
 
         @media (max-width: 768px) {
             /* width: 100%; */
-            background: repeat /* right bottom  */url(/img/contacto/damian-zaleski-RYyr-k3Ysqg-unsplash.jpg);
-            background-position: 98% 100%;
+            /* background: repeat right bottom url(/img/inicio/inicio-fondo-4.jpg); */
+            /* background-position: 98% 100%; */
             flex-direction: column;
             
         }
@@ -101,7 +117,7 @@
     margin-top: 20px;
 
         @media (max-width: 768px) {
-            margin-left: 10px;
+            /* margin-left: 10px; */
             width: 80vw;
             margin-top: 15px;
             margin-bottom: 0;
@@ -126,6 +142,10 @@
         @media (max-width: 768px) {
             height: 200px;
         }
+        @media (min-width: 768px) and (max-width: 1260px) {
+            max-width: 350px;
+        }
+
 }
 
 #instagram {

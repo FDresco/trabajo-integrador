@@ -9,14 +9,21 @@ body {
 
 &__header {
       text-align: center;
-      font-size: 35px;
+      font-size: 30px;
+      align-items: center;
+      justify-content: center;
+
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
    }
+
 }
 
 .cards-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 2em;
     justify-content: center;
     text-align: center;
 
