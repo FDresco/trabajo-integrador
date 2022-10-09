@@ -14,16 +14,16 @@
       <nav class="nav-bar">
         <ul class="nav-bar__nav-list">
           <li class="nav-bar__nav-item">
-            <a href="/index.html" class="nav-bar__nav-link"> Inicio </a>
+            <a href="" id="inicio" class="nav-bar__nav-link"> Inicio </a>
           </li>
           <li class="nav-bar__nav-item">
-            <a href="/alta.html" class="nav-bar__nav-link"> Alta </a>
+            <a href="" id="alta"  class="nav-bar__nav-link"> Alta </a>
           </li>
           <li class="nav-bar__nav-item">
-            <a href="/contacto.html" class="nav-bar__nav-link"> Contacto </a>
+            <a href="" id="contacto" class="nav-bar__nav-link"> Contacto </a>
           </li>
           <li class="nav-bar__nav-item">
-            <a href="/nosotros.html" class="nav-bar__nav-link"> Nosotros </a>
+            <a href="" id="nosotros" class="nav-bar__nav-link"> Nosotros </a>
           </li>
         </ul>
       </nav>
@@ -48,23 +48,37 @@
       <!-- search-bar -->
     </header>
     <!-- <header> -->
-    <main>
-      <section class="section-cards">
-        <header class="section-cards__header">
-          <h1>Lorem ipsum dolor sit amet.</h1>
-          <p>Se encontraron X productos</p>
-        </header>
 
-        <div class="cards-container">
-          
-        </div>
-        <!-- cards-container -->
-      </section>
-      <!-- section-cards -->
-    </main>
+       <div class="section-carrito"></div>
 
-    <script src="js/main.js"></script>
+    <main></main>
+
+    <footer></footer>
+
+
+     <!-- Código de librerias -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+
+    <!-- Codigo de plantillas -->
+    <script src="js/alta.js"></script>
+    <script src="js/nosotros.js"></script>
+    <script src="js/contacto.js"></script>
     <script src="js/card.js"></script>
+        
+   <!--  codigo del carrito -->
     <script src="js/carrito.js"></script>
+
+    <!-- codigo del http -->
+    <script src="js/http.client.js"></script>
+
+    <!-- productos -->
+    <script src="js/producto.service.js"></script>
+    <script src="js/productos.js"></script>
+
+    <!-- codigo de arranque -->
+    <script src="js/main.js"></script>
+
+
   </body>
 </html>
