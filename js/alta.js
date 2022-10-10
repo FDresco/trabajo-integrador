@@ -124,7 +124,9 @@ function initAlta() {
     inputs = document.querySelectorAll(".input-alta")
     console.log(inputs)
     form = document.querySelector(".form-alta")
+    console.log(form)
     button = document.querySelector(".boton-alta")
+    console.log(button)
     
     button.disabled = true
     camposValidos = [false, false, false, false, false, false, false] 
