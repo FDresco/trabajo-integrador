@@ -21,7 +21,8 @@ function start() {
   }
 
   function marcarLink(id) {
-    const links = document.querySelectorAll("header nav a")
+    const links = document.querySelectorAll(".nav-bar__nav-link")
+    console.log(links)
     links.forEach((link) => {
       if (link.id === id) link.classList.add("active")
       else link.classList.remove("active")

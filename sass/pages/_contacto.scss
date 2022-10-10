@@ -1,15 +1,15 @@
 .body-contacto {
-    background: no-repeat bottom url(/img/contacto/contacto-fondo.jpg);
+    //background: no-repeat bottom url(/img/contacto/contacto-fondo.jpg);
     background-position: 50% -50%;
-        @media (max-width: 768px) {
+/*         @media (max-width: 768px) {
             background: no-repeat url(/img/inicio/inicio-fondo-4.jpg)
-        }
+        } */
 
 }
 
 .main-header-contacto {
     font-family: 'Orbitron', sans-serif;
-    background: repeat url(/img/inicio/inicio-fondo-3.jpg);
+    //background: repeat url(/img/contacto/contacto-fondo.jpg);
     
 
 }
@@ -19,6 +19,9 @@
     height: 100vh;
     display: flex;
     font-family: "Changa", sans-serif;
+    //background: no-repeat bottom url(/img/contacto/contacto-fondo.jpg);
+    background-position: 50% -50%;
+
     /* background: no-repeat top url(/img/contacto/damian-zaleski-RYyr-k3Ysqg-unsplash.jpg); */
 
         @media (max-width: 768px) {
@@ -40,29 +43,29 @@
 
         @media (max-width: 768px) {
             align-items: flex-start;
-            margin-left: 10px;
-            width: auto;
+            //margin-left: 0px;
+            //width: auto;
             
         }
 
 &__header {
     margin-top: 10px;
-    margin-left: 15px;
+    //margin-left: 0px;
     font-size: 25px;
 
 }
 
 &__form {
-    width: 20vw;
+    //width: 20vw;
     display: flex;
     flex-direction: column;
     align-content: center;
-    margin-left: 90px;
+    //margin-left: 15px;
     font-size: 20px;
 
         @media (max-width: 768px) {
-            width: 70vw;
-            margin-left: 25px;
+            //width: 70vw;
+            //margin-left: 25px;
 
         }
      }
@@ -81,8 +84,9 @@
 }
 
 &__input, &__textarea {
-    width: 90%;
+    //width: 90%;
     /* height: 25px; */
+    width: 100%;
     margin-bottom: 10px;
     border-radius: 4px;
     border: 2px solid var(--color-bordes);
@@ -93,7 +97,7 @@
 }
 
 &__textarea {
-    height: 80%;
+    height: 100%;
 }
 
 &__btn {
@@ -116,13 +120,13 @@
 }
 
 .aside {
-    width: 25vw;
+    width: 90vw;
 &__nav, &__lista {
     margin-bottom: 20px;
     margin-top: 20px;
 
         @media (max-width: 768px) {
-            margin-left: 25px;
+            //margin-left: 25px;
             width: 80vw;
             margin-top: 15px;
             margin-bottom: 0;
@@ -143,11 +147,13 @@
     border: 3px solid var(--color-bordes);
     box-shadow: 0 2px 4px var(--color-toggle);
     position: relative;
-    top: 10px; right: 180px;
+    top: 10px; right: 5px;
+    //padding: 15px;
+    //margin: 15 px;
         @media (max-width: 768px) {
             height: 200px;
             width: 300px;
-            right: 0px;
+            right: 10px;
             box-shadow: none;
         }
         @media (min-width: 768px) and (max-width: 1260px) {
