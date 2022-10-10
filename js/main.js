@@ -1,4 +1,5 @@
 var elemSectionCarrito = document.getElementsByClassName("section-carrito")[0]
+console.log(elemSectionCarrito)
 
 function start() {
   /* ------------------------------------------- */

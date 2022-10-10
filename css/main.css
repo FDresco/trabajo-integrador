@@ -186,7 +186,7 @@ body {
   padding-left: 8px;
   padding-right: 8px;
   cursor: pointer;
-  /* border-right: 4px solid var(--color-bordes); */
+  border-right: 4px solid var(--color-bordes);
 }
 @media (max-width: 768px) {
   .search-bar__carrito-container {
@@ -767,6 +767,21 @@ a {
 }
 .container-alta #listado-productos {
   width: 100%;
+}
+
+.section-carrito {
+  display: none;
+  position: fixed;
+  background-color: #f1f2f3;
+  z-index: 1;
+  top: 150px;
+  left: 150px;
+  right: 150px;
+  bottom: 150px;
+  box-shadow: 0.3em 0.3em 10em 0.3em rgb(0, 0, 0);
+}
+.section-carrito--visible {
+  display: block;
 }
 
 :root {
