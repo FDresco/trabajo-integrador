@@ -1,8 +1,10 @@
 .container-alta {
     padding: 10px;
+    font-family: "Changa", sans-serif;
 
     h1, h2 {
-        color: blue;
+        font-size: 35px;
+        color: black;
     }
 
     div, input {
@@ -10,20 +12,34 @@
         display: block;
         margin-bottom: 1px;
         padding: 5px;
+        border-radius: 4px;
+        border: 2px solid var(--color-bordes);
+        box-shadow: 0 4px 10px var(--color-bordes), 0 4px 8px var(--color-toggle);
+        &:focus {
+            background-color: var(--color-header);
+        }
     }
 
     button {
         display: block;
-        margin-top: 20px;
         width: 80px;
-        background-color: blue;
-        color: white;
         cursor: pointer;
         margin-bottom: 10px;
+        width: 70px;
+        height: 30px;
+        border-radius: 4px;
+        border: 2px solid var(--color-bordes);
+        box-shadow: 0 4px 10px var(--color-bordes), 0 4px 8px var(--color-toggle);
+        background-color: var(--color-toggle);
+        color: var(--color-search);
+        margin-top: 5px;
+        cursor: pointer;
 
-        &:hover {
-            background-color: blueviolet;
-        }
+            &:hover {
+                background-color: var(--color-header);
+                color: black;
+            }
+
 
     }
 
