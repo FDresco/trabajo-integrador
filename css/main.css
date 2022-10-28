@@ -489,7 +489,7 @@ ul {
 .card:hover, .card:focus {
   transform: perspective(1.03, 0.5) skewX();
   transform-origin: top;
-  box-shadow: 0 7px 8px rgba(0, 0, 0, 0.05), 0 3 3px rgba(0, 0, 0, 0.01);
+  box-shadow: 0 27px 58px rgba(0, 0, 0, 0.05), 0 3 3px rgba(0, 0, 0, 0.01);
   height: 400px;
 }
 .card:nth-child(2n) {
@@ -782,6 +782,10 @@ a {
 }
 .section-carrito--visible {
   display: block;
+}
+
+.active {
+  font-weight: bold;
 }
 
 :root {
