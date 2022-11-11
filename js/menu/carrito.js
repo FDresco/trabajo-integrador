@@ -14,9 +14,24 @@ async function renderTablaCarrito(carrito) {
 
     elemSectionCarrito.innerHTML = html
     elemSectionCarrito.classList.add("section-carrito--visible")
+    cerrarCarrito(elemSectionCarrito)
+
   } catch (error) {
     console.error(error)
   }
+}
+
+function cerrarCarrito(elemSectionCarrito) {
+  const btn = document.createElement('button');
+  btn.classList.add('btn--cerrar');
+  btn.innerHTML =  `<img src="icons/cerrar.svg" alt="cerrar">`
+  elemSectionCarrito.appendChild(btn);
+
+  btn.addEventListener('click', () => {
+      elemSectionCarrito.classList.remove('section-carrito--visible');
+      mostrarCarrito = false;
+  })
+
 }
 
 function initCarrito() {

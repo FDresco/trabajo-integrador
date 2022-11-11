@@ -8,8 +8,35 @@
     right: 150px;
     bottom: 150px;
     box-shadow: .3em .3em 10em .3em rgba(0,0,0,1);
+    font-family: "Changa", sans-serif;
+    padding: 10px;
 
     &--visible {
         display: block;
     }
+}
+
+.btn--cerrar {
+    color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    position: absolute;
+    top: 5px; right: 5px;
+    
+
+    & img {
+        width: 15px;
+        background-color: var(--color-bordes)
+
+
+    }
+    
+}
+
+.btn__enviarCarrito {
+    position: absolute;
+    bottom: 15px; right: 5px;
+    background-color: var(--color-toggle);
+    color: whitesmoke;
 }

@@ -779,9 +779,33 @@ a {
   right: 150px;
   bottom: 150px;
   box-shadow: 0.3em 0.3em 10em 0.3em rgb(0, 0, 0);
+  font-family: "Changa", sans-serif;
+  padding: 10px;
 }
 .section-carrito--visible {
   display: block;
+}
+
+.btn--cerrar {
+  color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.btn--cerrar img {
+  width: 15px;
+  background-color: var(--color-bordes);
+}
+
+.btn__enviarCarrito {
+  position: absolute;
+  bottom: 15px;
+  right: 5px;
+  background-color: var(--color-toggle);
+  color: whitesmoke;
 }
 
 .active {
