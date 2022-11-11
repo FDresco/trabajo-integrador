@@ -239,7 +239,8 @@ body {
 
 .section-cards {
   font-family: "Changa", sans-serif;
-  padding: 1em;
+  padding-left: 15em;
+  padding-right: 15em;
 }
 .section-cards__header {
   text-align: center;

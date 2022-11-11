@@ -18,6 +18,7 @@ class FormularioAlta {
     this.inputs = document.querySelectorAll(".input-alta")
     this.form = document.querySelector(".form-alta")
     this.button = document.querySelector(".boton-alta")
+    //console.log(this.button)
 
     this.button.disabled = true
 
