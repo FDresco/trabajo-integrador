@@ -242,6 +242,12 @@ body {
   padding-left: 15em;
   padding-right: 15em;
 }
+@media (max-width: 768px) {
+  .section-cards {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .section-cards__header {
   text-align: center;
   font-size: 30px;
@@ -738,7 +744,6 @@ a {
   background-color: var(--color-toggle);
   color: var(--color-search);
   margin-top: 5px;
-  cursor: pointer;
 }
 .container-alta button:hover {
   background-color: var(--color-header);
@@ -774,13 +779,20 @@ a {
   position: fixed;
   background-color: #f1f2f3;
   z-index: 1;
-  top: 150px;
-  left: 150px;
-  right: 150px;
-  bottom: 150px;
+  top: 80px;
+  left: auto;
+  right: 0;
+  bottom: 80px;
+  width: 100%;
   box-shadow: 0.3em 0.3em 10em 0.3em rgb(0, 0, 0);
   font-family: "Changa", sans-serif;
-  padding: 10px;
+  padding: 1rem;
+  font-size: 1rem;
+}
+@media (max-width: 768px) {
+  .section-carrito {
+    font-size: 0.8rem;
+  }
 }
 .section-carrito--visible {
   display: block;
@@ -800,12 +812,95 @@ a {
   background-color: var(--color-bordes);
 }
 
+.btn__enviarCarrito, .boton__carrito {
+  width: 45px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  height: 20px;
+  border-radius: 4px;
+  border: 2px solid var(--color-bordes);
+  background-color: var(--color-toggle);
+  color: var(--color-search);
+  margin-top: 5px;
+}
+.btn__enviarCarrito:hover, .boton__carrito:hover {
+  background-color: var(--color-header);
+  color: black;
+}
+
 .btn__enviarCarrito {
   position: absolute;
   bottom: 15px;
   right: 5px;
-  background-color: var(--color-toggle);
-  color: whitesmoke;
+}
+
+/* .container__table {
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+    @media (max-width: 768px)  {
+        width: 50vw;
+    }  
+} */
+.table__carrito {
+  table-layout: fixed;
+  width: 100%;
+  margin-block: 1em;
+  border-collapse: collapse;
+  border-radius: 4px;
+  overflow: hidden;
+  /*     & table {
+      display: table;
+      border-collapse: separate;
+      box-sizing: border-box;
+      text-indent: initial;
+      border-spacing: 2px;
+      border-color: grey;
+      } */
+  /*     & thead {
+  	th {
+  		background-color: var(--color-header)
+  	}
+      }
+
+      & tbody {
+  	tr {
+  		&:hover {
+  			background-color: rgba(255,255,255,0.3);
+  		}
+  	}
+
+      td {
+  		position: relative;
+  		&:hover {
+  			&:before {
+  				content: "";
+  				position: absolute;
+  				left: 0;
+  				right: 0;
+  				top: -9999px;
+  				bottom: -9999px;
+  				background-color: rgba(255,255,255,0.2);
+  				z-index: -1;
+  			}
+          }
+      }
+  }  */
+}
+.table__carrito th, .table__carrito td {
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgb(27, 26, 26);
+  -webkit-backdrop-filter: brightness(90%);
+          backdrop-filter: brightness(90%);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.table__carrito th {
+  text-align: left;
 }
 
 .active {
