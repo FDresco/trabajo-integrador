@@ -1,6 +1,5 @@
 
     //const btnCarrito = document.getElementsByClassName('search-bar__carrito-container')[0]
-
     class CarritoController extends CarritoModel {
       constructor() {
         super()
@@ -24,7 +23,7 @@
       }
 
       agregarAlCarrito(producto) {
-        console.log(producto)
+        //console.log(producto)
 
         if (!this.elProductoEstaEnElCarrito(producto)) {
           producto.cantidad = 1
@@ -54,17 +53,33 @@
           const elemSectionCarrito =
             document.getElementsByClassName("section-carrito")[0]
 
-          elemSectionCarrito.innerHTML = "<h2>Enviando carrito...</h2>"
+          elemSectionCarrito.innerHTML = "<h2>Enviando...</h2>"
           await carritoService.guardarCarritoServicio(this.carrito)
           this.carrito = []
           localStorage.setItem("carrito", JSON.stringify(this.carrito))
 
-          elemSectionCarrito.innerHTML = "<h2>Enviando carrito <b>OK!</b></h2>"
+          elemSectionCarrito.innerHTML = "<h2>Tu compra fue realizada con éxito!</h2>"
+
+          this.cerrarCarrito(elemSectionCarrito)
         } catch (error) {
           console.error(error)
         }
       }
+
+      cerrarCarrito(elemSectionCarrito) {
+        const btn = document.createElement("button")
+        btn.classList.add("btn--cerrar")
+        btn.innerHTML = `<img src="icons/cerrar.svg" alt="cerrar">`
+        elemSectionCarrito.appendChild(btn)
+
+        btn.addEventListener("click", () => {
+          elemSectionCarrito.classList.remove("section-carrito--visible")
+          mostrarCarrito = false
+        })
+      }
     }
+
+
 
     const carritoController = new CarritoController()
 

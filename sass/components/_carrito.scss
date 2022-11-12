@@ -26,7 +26,6 @@
 
 
 .btn--cerrar {
-    color: transparent;
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -36,7 +35,7 @@
 
     & img {
         width: 15px;
-        background-color: var(--color-bordes)
+        background-color: rgba(243, 23, 23, 0.38);
 
 
     }
@@ -82,7 +81,7 @@
     table-layout: fixed;
     width: 100%;
     margin-block: 1em;
-    border-collapse: collapse;
+    //border-collapse: collapse;
     border-radius: 4px;
     overflow: hidden;
 
@@ -107,6 +106,13 @@
 
      & th {
        text-align: left; 
+    }
+
+    & th {
+        img {
+            align-items: center;
+            background-color: red;
+        }
     }
 
 /*     & thead {

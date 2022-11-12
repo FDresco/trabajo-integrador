@@ -56,6 +56,7 @@ function initCarrito() {
       console.error(error)
     }
   })
+  cerrarCarrito(elemSectionCarrito)
 }
 
 initCarrito()

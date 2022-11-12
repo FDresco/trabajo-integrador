@@ -799,7 +799,6 @@ a {
 }
 
 .btn--cerrar {
-  color: transparent;
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -809,7 +808,7 @@ a {
 }
 .btn--cerrar img {
   width: 15px;
-  background-color: var(--color-bordes);
+  background-color: rgba(243, 23, 23, 0.38);
 }
 
 .btn__enviarCarrito, .boton__carrito {
@@ -848,7 +847,6 @@ a {
   table-layout: fixed;
   width: 100%;
   margin-block: 1em;
-  border-collapse: collapse;
   border-radius: 4px;
   overflow: hidden;
   /*     & table {
@@ -901,6 +899,10 @@ a {
 }
 .table__carrito th {
   text-align: left;
+}
+.table__carrito th img {
+  align-items: center;
+  background-color: red;
 }
 
 .active {
