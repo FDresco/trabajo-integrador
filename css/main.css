@@ -179,7 +179,7 @@ body {
 }
 .search-bar__carrito-container {
   flex: 0 0 3.5em;
-  background: no-repeat center/100% url(/icons/carrito3.png);
+  background: no-repeat center/100% url(/icons/carrito.svg);
   color: transparent;
   /* background-color: rgba(189, 204, 172, 0.836); */
   margin-right: 25px;
@@ -711,6 +711,14 @@ a {
   text-decoration: none;
 }
 
+.btn__agregar {
+  background: no-repeat center/100% url(/icons/carrito-agregar.svg);
+  color: transparent;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
 .container-alta {
   padding: 10px;
   font-family: "Changa", sans-serif;
@@ -829,8 +837,10 @@ a {
 
 .btn__enviarCarrito {
   position: absolute;
-  bottom: 15px;
-  right: 5px;
+  bottom: 20px;
+  right: 15px;
+  width: 80px;
+  height: 35px;
 }
 
 /* .container__table {

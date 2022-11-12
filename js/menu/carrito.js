@@ -30,6 +30,7 @@ function cerrarCarrito(elemSectionCarrito) {
   btn.addEventListener('click', () => {
       elemSectionCarrito.classList.remove('section-carrito--visible');
       mostrarCarrito = false;
+      
   })
 
 }
@@ -45,6 +46,7 @@ function initCarrito() {
 
   btnCarrito.addEventListener("click", async () => {
     mostrarCarrito = !mostrarCarrito
+    
 
     try {
       if (mostrarCarrito) {
