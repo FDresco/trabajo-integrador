@@ -10,9 +10,7 @@ class ProductoController extends ProductoModel {
   }
 
   async guardarProducto(producto) {
-    const productoGuardado = await productoService.guardarProductoService(
-      producto
-    )
+    const productoGuardado = await productoService.guardarProductoService(producto)
     //console.log(productoGuardado)
 
     this.productos.push(productoGuardado)
@@ -26,10 +24,7 @@ class ProductoController extends ProductoModel {
     const producto = formularioAlta.leerProductoIngresado()
     formularioAlta.limpiarFormulario()
 
-    const productoActualizado = await productoService.actualizarProductoService(
-      id,
-      producto
-    )
+    const productoActualizado = await productoService.actualizarProductoService(id,producto)
     // console.log(productoActualizado)
 
     const index = this.productos.findIndex(

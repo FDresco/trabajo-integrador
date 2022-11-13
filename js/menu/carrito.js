@@ -38,11 +38,8 @@ function cerrarCarrito(elemSectionCarrito) {
 function initCarrito() {
   console.warn("initCarrito()")
 
-  const btnCarrito = document.getElementsByClassName(
-    "search-bar__carrito-container"
-  )[0]
-  const elemSectionCarrito =
-    document.getElementsByClassName("section-carrito")[0]
+  const btnCarrito = document.getElementsByClassName("search-bar__carrito-container")[0]
+  const elemSectionCarrito = document.getElementsByClassName("section-carrito")[0]
 
   btnCarrito.addEventListener("click", async () => {
     mostrarCarrito = !mostrarCarrito
