@@ -31,13 +31,15 @@
           producto.cantidad = 1
           this.carrito.push(producto)
 
+          alert("Producto agregado al carrito")
+/* 
           Swal.fire({
             position: "top-end",
             icon: "success",
             title: "Producto agregado al carrito",
             showConfirmButton: false,
             timer: 1500,
-          })
+          }) */
 
          function cambiarCarrito() {
           const carritoContainer = document.getElementsByClassName("search-bar__carrito-container")[0]
