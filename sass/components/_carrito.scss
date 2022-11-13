@@ -7,20 +7,39 @@
     left: auto;
     right: 0;
     bottom: 80px;
-    width: 100%;
+    width: 40%;
+    height: 40%;
     box-shadow: .3em .3em 10em .3em rgba(0,0,0,1);
     font-family: "Changa", sans-serif;
     padding: 1rem;
     font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid rgba(110, 81, 110, 0.664);
 
         @media (max-width: 768px ) {
             font-size: 0.8rem;
+            width: 100%;
         }
 
     &--visible {
         display: block;
     }
+
+    & h3 {
+        color: var(--color-toggle);
+    }
+
+    & h3, h2 {
+        text-align: center;
+    }
+
+    & h2 {
+        margin-top: 60px;
+    }
+
+
 }
+
 
 
 .btn--cerrar {

@@ -649,19 +649,32 @@ a {
   left: auto;
   right: 0;
   bottom: 80px;
-  width: 100%;
+  width: 40%;
+  height: 40%;
   box-shadow: 0.3em 0.3em 10em 0.3em rgb(0, 0, 0);
   font-family: "Changa", sans-serif;
   padding: 1rem;
   font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid rgba(110, 81, 110, 0.664);
 }
 @media (max-width: 768px) {
   .section-carrito {
     font-size: 0.8rem;
+    width: 100%;
   }
 }
 .section-carrito--visible {
   display: block;
+}
+.section-carrito h3 {
+  color: var(--color-toggle);
+}
+.section-carrito h3, .section-carrito h2 {
+  text-align: center;
+}
+.section-carrito h2 {
+  margin-top: 60px;
 }
 
 .btn--cerrar {
