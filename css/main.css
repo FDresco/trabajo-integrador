@@ -67,7 +67,6 @@ body {
 }
 .nav-bar__nav-item {
   text-align: center;
-  border: 2px black solid;
   margin: 10px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -95,9 +94,9 @@ body {
   display: block;
   color: var(--color-toggle);
   font-weight: 700;
+  font-size: 20px;
   padding: 1em 2em;
   text-decoration: none;
-  border: 2px black solid;
   margin: 2px;
 }
 @media (max-width: 768px) {
@@ -137,12 +136,13 @@ body {
 }
 .search-bar__logo-container {
   /* background-color: rgba(189, 204, 172, 0.836); */
-  border-left: 4px solid var(--color-bordes);
+  margin-left: 100px;
   color: transparent;
   background: no-repeat center/90% url(/icons/logo2.png);
 }
 @media (max-width: 768px) {
   .search-bar__logo-container {
+    margin-left: 0;
     border: none;
   }
 }
@@ -179,17 +179,15 @@ body {
 }
 .search-bar__carrito-container {
   flex: 0 0 3.5em;
-  background: no-repeat center/100% url(/icons/carrito.svg);
+  background: center/150% url(/icons/carrito2.svg);
   color: transparent;
-  /* background-color: rgba(189, 204, 172, 0.836); */
-  margin-right: 25px;
+  margin-right: 100px;
   padding-right: 25px;
   cursor: pointer;
-  border-left: 4px solid var(--color-bordes);
 }
 @media (max-width: 768px) {
   .search-bar__carrito-container {
-    border: none;
+    margin-right: 10px;
   }
 }
 
@@ -712,7 +710,7 @@ a {
 }
 
 .btn__agregar {
-  background: no-repeat center/100% url(/icons/carrito-agregar.svg);
+  background: no-repeat center/100% url(/icons/carrito-agrega.svg);
   color: transparent;
   width: 40px;
   height: 40px;

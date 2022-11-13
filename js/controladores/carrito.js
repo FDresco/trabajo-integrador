@@ -1,5 +1,6 @@
 
     //const btnCarrito = document.getElementsByClassName('search-bar__carrito-container')[0]
+    
     class CarritoController extends CarritoModel {
       constructor() {
         super()
@@ -33,14 +34,24 @@
           Swal.fire({
             position: "top-end",
             icon: "success",
-            title: "Agregaste el producto al carrito",
+            title: "Producto agregado al carrito",
             showConfirmButton: false,
             timer: 1500,
           })
 
+         function cambiarCarrito() {
+          const carritoContainer = document.getElementsByClassName("search-bar__carrito-container")[0]
+          //console.log(carritoContainer)
+          carritoContainer.style.background = "no-repeat center/150% url(/icons/carrito-nuevo.svg)"
+              }
+        
+        cambiarCarrito()
+    
+
         } else {
           const productoDeCarrito = this.obtenerProductoDeCarrito(producto)
           productoDeCarrito.cantidad++
+
         }
 
         localStorage.setItem("carrito", JSON.stringify(this.carrito))
@@ -53,6 +64,10 @@
           localStorage.setItem("carrito", JSON.stringify(this.carrito))
 
           await renderTablaCarrito(this.carrito)
+
+          //const carritoContainer = document.getElementsByClassName("search-bar__carrito-container")[0]
+          //carritoContainer.style.background = "no-repeat center/150% url(/icons/carrito2.svg)"
+
         } catch (error) {
           console.log(error)
         }
@@ -71,6 +86,10 @@
           elemSectionCarrito.innerHTML = "<h2>Tu compra fue realizada con éxito!</h2>"
 
           this.cerrarCarrito(elemSectionCarrito)
+
+          const carritoContainer = document.getElementsByClassName("search-bar__carrito-container")[0]
+          carritoContainer.style.background = "no-repeat center/150% url(/icons/carrito2.svg)"
+
         } catch (error) {
           console.error(error)
         }
@@ -90,6 +109,8 @@
     }
 
 
+
+    /* `<img src="icons/carrito-agregar.svg" alt="carrito-nuevo">` */
 
     const carritoController = new CarritoController()
 
