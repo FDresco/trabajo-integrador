@@ -292,9 +292,20 @@ a {
 .btn__agregar {
     background: no-repeat center/100% url(/icons/carrito-agregar.svg);
     color: transparent;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
+    box-shadow: 0 3px 6px var(--color-bordes), 0 4px 8px var(--color-toggle);
+    background-color: rgba(236, 132, 12, 0.829);
+    border-radius: 4px;
+    border: 2px solid rgba(26, 25, 25, 0.63);
+    position: relative;
+    top: 3px; left: 80px;
+
+     &:hover {
+        filter: brightness(1.25);
+     }
+
 }
 
 
