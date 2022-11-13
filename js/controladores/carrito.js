@@ -26,8 +26,18 @@
         //console.log(producto)
 
         if (!this.elProductoEstaEnElCarrito(producto)) {
+          
           producto.cantidad = 1
           this.carrito.push(producto)
+
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Agregaste el producto al carrito",
+            showConfirmButton: false,
+            timer: 1500,
+          })
+
         } else {
           const productoDeCarrito = this.obtenerProductoDeCarrito(producto)
           productoDeCarrito.cantidad++
