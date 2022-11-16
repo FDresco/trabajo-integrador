@@ -251,6 +251,13 @@ body {
     font-size: 20px;
   }
 }
+.section-cards__header h1 {
+  color: rgba(115, 8, 124, 0.904);
+  text-shadow: 0 2px 3px rgb(39, 38, 38);
+}
+.section-cards__header p {
+  text-shadow: 0 1px 1px rgb(56, 53, 53);
+}
 
 .cards-container {
   display: flex;
@@ -585,7 +592,7 @@ a {
   font-size: 35px;
   color: black;
 }
-.container-alta div, .container-alta input {
+.container-alta input {
   width: 300px;
   display: block;
   margin-bottom: 1px;
@@ -594,7 +601,7 @@ a {
   border: 2px solid var(--color-bordes);
   box-shadow: 0 4px 10px var(--color-bordes), 0 4px 8px var(--color-toggle);
 }
-.container-alta div:focus, .container-alta input:focus {
+.container-alta input:focus {
   background-color: var(--color-header);
 }
 .container-alta button {
@@ -602,7 +609,6 @@ a {
   width: 80px;
   cursor: pointer;
   margin-bottom: 10px;
-  width: 70px;
   height: 30px;
   border-radius: 4px;
   border: 2px solid var(--color-bordes);
@@ -622,22 +628,24 @@ a {
   margin-top: 10px;
 }
 .container-alta form div {
-  border: 1px solid crimson;
-  background-color: gold;
-  color: darkred;
   margin: 2px 0 10px 0;
   border-radius: 5px;
-  display: none;
 }
 .container-alta table, .container-alta th, .container-alta td {
   border: 1px solid black;
   border-collapse: collapse;
 }
 .container-alta table {
-  width: 90%;
-}
-.container-alta #listado-productos {
   width: 100%;
+  table-layout: fixed;
+  overflow: hidden;
+  text-indent: initial;
+}
+.container-alta th, .container-alta td {
+  border-collapse: collapse;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .section-carrito {

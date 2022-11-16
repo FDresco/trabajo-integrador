@@ -7,7 +7,7 @@
         color: black;
     }
 
-    div, input {
+     input {
         width: 300px;
         display: block;
         margin-bottom: 1px;
@@ -15,6 +15,7 @@
         border-radius: 4px;
         border: 2px solid var(--color-bordes);
         box-shadow: 0 4px 10px var(--color-bordes), 0 4px 8px var(--color-toggle);
+
         &:focus {
             background-color: var(--color-header);
         }
@@ -25,7 +26,6 @@
         width: 80px;
         cursor: pointer;
         margin-bottom: 10px;
-        width: 70px;
         height: 30px;
         border-radius: 4px;
         border: 2px solid var(--color-bordes);
@@ -42,7 +42,6 @@
 
     }
 
-
     input[type="checkbox"] {
         display: inline;
         width: 15px;
@@ -51,24 +50,28 @@
     }
 
     form div {
-        border: 1px solid crimson;
-        background-color: gold;
-        color: darkred;
         margin: 2px 0 10px 0;
         border-radius: 5px;
-        display: none;
     }
 
     table, th, td {
         border: 1px solid black;
         border-collapse: collapse;
+
     }
 
     table {
-        width: 90%;
+        width: 100%;
+        table-layout: fixed;
+        overflow: hidden;
+        text-indent: initial;
     }
 
-    #listado-productos {
-        width: 100%;
+    th, td {
+        border-collapse: collapse;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap
     }
+
 }

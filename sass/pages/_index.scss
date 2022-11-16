@@ -21,7 +21,20 @@ body {
       @media (max-width: 768px) {
         font-size: 20px
       }
+    
+    & h1 {
+    color:  rgba(115, 8, 124, 0.904);
+    text-shadow: 0 2px 3px  rgb(39, 38, 38);
+        }
+
+    & p {
+    text-shadow: 0 1px 1px rgb(56, 53, 53);
+        }
    }
+
+
+
+//
 
 }
 
