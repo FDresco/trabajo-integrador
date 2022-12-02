@@ -1,5 +1,7 @@
 
-    //const btnCarrito = document.getElementsByClassName('search-bar__carrito-container')[0]
+//const btnCarrito = document.getElementsByClassName('search-bar__carrito-container')[0]
+
+//const { preferences } = require("joi")
     
     class CarritoController extends CarritoModel {
       constructor() {
@@ -31,15 +33,13 @@
           producto.cantidad = 1
           this.carrito.push(producto)
 
-          alert("Producto agregado al carrito")
-/* 
           Swal.fire({
             position: "top-end",
             icon: "success",
             title: "Producto agregado al carrito",
             showConfirmButton: false,
             timer: 1500,
-          }) */
+          })
 
          function cambiarCarrito() {
           const carritoContainer = document.getElementsByClassName("search-bar__carrito-container")[0]
@@ -81,11 +81,19 @@
             document.getElementsByClassName("section-carrito")[0]
 
           elemSectionCarrito.innerHTML = "<h2>Enviando...</h2>"
-          await carritoService.guardarCarritoServicio(this.carrito)
+          const preference = await carritoService.guardarCarritoServicio(this.carrito)
           this.carrito = []
           localStorage.setItem("carrito", JSON.stringify(this.carrito))
 
           elemSectionCarrito.innerHTML = "<h2>Tu compra fue realizada con éxito!</h2>"
+
+          setTimeout( async () => {
+                elemSectionCarrito.classList.remove('section-carrito--visible')
+                /* mostraCarrito = false */
+                console.log(preference)
+                await renderPago(preference)
+            }, 0)
+
 
           this.cerrarCarrito(elemSectionCarrito)
 

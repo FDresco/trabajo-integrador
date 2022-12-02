@@ -4,43 +4,57 @@
   <form class="form-alta" autocomplete="off">
     <!-- Campo de nombre -->
     <label for="nombre">Nombre</label>
-    <input class="input-alta" type="text" id="nombre" />
-    <div></div>
+    <input class="data-validation" type="text" id="nombre" />
+    <div class="mensaje-validacion"></div>
 
     <!-- Campo de precio -->
     <label for="precio">Precio</label>
-    <input class="input-alta" type="text" id="precio" />
-    <div></div>
+    <input class="data-validation" type="text" id="precio" />
+    <div class="mensaje-validacion"></div>
 
     <!-- Campo de stock -->
     <label for="stock">Stock</label>
-    <input class="input-alta" type="text" id="stock" />
-    <div></div>
+    <input class="data-validation" type="text" id="stock" />
+    <div class="mensaje-validacion"></div>
 
     <!-- Campo de marca -->
     <label for="marca">Marca</label>
-    <input class="input-alta" type="text" id="marca" />
-    <div></div>
+    <input class="data-validation" type="text" id="marca" />
+    <div class="mensaje-validacion"></div>
 
     <!-- Campo de categoria -->
     <label for="categoria">Categoría</label>
-    <input class="input-alta" type="text" id="categoria" />
-    <div></div>
+    <input class="data-validation" type="text" id="categoria" />
+    <div class="mensaje-validacion"></div>
 
     <!-- Campo de detalles -->
     <label for="detalles">Detalles</label>
-    <input class="input-alta" type="text" id="detalles" />
-    <div></div>
+    <input class="data-validation" type="text" id="detalles" />
+    <div class="mensaje-validacion"></div>
 
     <!-- Campo de foto -->
-    <label for="foto">Foto</label>
-    <input class="input-alta" type="text" id="foto" />
-    <div></div>
+    <!-- <label for="foto">Foto</label>
+    <input type="text" id="foto" />
+    <div></div> -->
+
+    <div id="drop-area">
+      <p>Subir imagen al servidor con <b>file dialog</b> o con <b>Drag and drop</b> dentro del area punteada </p>
+      <br>
+      <input type="file" id="foto" accept="image/*">
+      <label class="button" for="foto">File Dialog</label>
+      <br><br>
+
+      <progress id="progress-bar" max="100" value="0"></progress>
+
+      <div id="gallery"><img src="" alt=""></div>
+    </div>
+
+
 
     <!-- Campo de envio -->
     <label for="envio">Envío</label>
-    <input class="input-alta" type="checkbox" id="envio" />
-    <div></div>
+    <input class="data-validation" type="checkbox" id="envio" />
+    <div class="mensaje-validacion"></div>
 
     <button class="boton-alta">Agregar</button>
   </form>

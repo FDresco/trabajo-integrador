@@ -49,7 +49,7 @@
         margin-top: 10px;
     }
 
-    form div {
+    form .mensaje-validacion {
         margin: 2px 0 10px 0;
         border-radius: 5px;
     }
@@ -72,6 +72,41 @@
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap
+    }
+
+    //DROP AREA
+
+    #drop-area {
+        border: 2px dashed rgb(37, 37, 37);
+        border-radius: 20px;
+        width: 300px;
+        margin: 25px 0;
+        padding: 20px;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 10px;
+        background-color: rgb(82, 80, 80);
+        cursor: pointer;
+        border-radius: 5px;
+        border-radius: 1px solid rgb(41, 40, 40);
+    
+    }
+
+    #foto {
+        display: none;
+    }
+
+    #gallery img {
+        width: 100px;
+        margin-top: 10px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+    #drop-area.highlight {
+        border-color: rgb(14, 182, 98);
     }
 
 }

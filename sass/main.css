@@ -657,7 +657,7 @@ a {
 .container-alta .button {
   display: inline-block;
   padding: 10px;
-  background-color: rgb(82, 80, 80);
+  background-color: rgb(37, 37, 37);
   cursor: pointer;
   border-radius: 5px;
   border-radius: 1px solid rgb(41, 40, 40);
@@ -672,7 +672,7 @@ a {
   vertical-align: middle;
 }
 .container-alta #drop-area.highlight {
-  border-color: rgb(14, 182, 98);
+  border-color: rgb(17, 218, 117);
 }
 
 .section-carrito {
